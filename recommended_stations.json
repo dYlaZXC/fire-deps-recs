@@ -1,0 +1,132 @@
+[
+  {
+    "id": 45,
+    "landInfo": {
+      "kad_nomer": "20315916273.0",
+      "granted_right": "общая долевая собственность",
+      "land_use_term": "",
+      "celevoe": "для эксплуатации и обслуживания жилого дома",
+      "location": "улица Сарсенбаева, дом 182, Медеуский район",
+      "area": 1638.0,
+      "divisible_plot": "нет",
+      "geom_wkt": "POINT(76.99234732 43.26339913)"
+    }
+  },
+  {
+    "id": 42,
+    "landInfo": {
+      "kad_nomer": "20317024039.0",
+      "granted_right": "постоянное землепользование",
+      "land_use_term": "",
+      "celevoe": "для эксплуатации и обслуживания автодрома",
+      "location": "г. Алматы Турксибский р-н., восточнее автомагистрали Капчагай, севернее ул. Бекмаханова,Турксибский район ориен.мест.",
+      "area": 87245.0,
+      "divisible_plot": "нет",
+      "geom_wkt": "POINT(76.94257247 43.35700599)"
+    }
+  },
+  {
+    "id": 41,
+    "landInfo": {
+      "kad_nomer": "20321069672.0",
+      "granted_right": "частная собственность",
+      "land_use_term": "",
+      "celevoe": "для ведения личного подсобного хозяйства",
+      "location": "село Теректы, улица Абая, 7, Алатауский район",
+      "area": 1040.0,
+      "divisible_plot": "да",
+      "geom_wkt": "POINT(76.79579098 43.24461264)"
+    }
+  },
+  {
+    "id": 38,
+    "landInfo": {
+      "kad_nomer": "20321042435.0",
+      "granted_right": "частная собственность",
+      "land_use_term": "",
+      "celevoe": "для эксплуатации и обслуживания индивидуального жилого дома",
+      "location": "микрорайон Шанырак-1, улица Алпамыс батыра, участок 71а, Алатауский район",
+      "area": 715.0,
+      "divisible_plot": "нет",
+      "geom_wkt": "POINT(76.8567193 43.28912633)"
+    }
+  },
+  {
+    "id": 43,
+    "landInfo": {
+      "kad_nomer": "20322025401.0",
+      "granted_right": "частная собственность",
+      "land_use_term": "",
+      "celevoe": "для ведения личного подсобного хозяйства",
+      "location": "улица Азербаева, дом б/н, с. Карагайлы, Наурызбайский район",
+      "area": 550.0,
+      "divisible_plot": "да",
+      "geom_wkt": "POINT(76.85278533 43.17501302)"
+    }
+  },
+  {
+    "id": 39,
+    "landInfo": {
+      "kad_nomer": "",
+      "granted_right": "",
+      "land_use_term": "",
+      "celevoe": "",
+      "location": "",
+      "area": null,
+      "divisible_plot": "",
+      "geom_wkt": "POINT(76.87951926 43.25177705)"
+    }
+  },
+  {
+    "id": 40,
+    "landInfo": {
+      "kad_nomer": "",
+      "granted_right": "",
+      "land_use_term": "",
+      "celevoe": "",
+      "location": "",
+      "area": null,
+      "divisible_plot": "",
+      "geom_wkt": "POINT(76.93366935 43.30208786)"
+    }
+  },
+  {
+    "id": 37,
+    "landInfo": {
+      "kad_nomer": "",
+      "granted_right": "",
+      "land_use_term": "",
+      "celevoe": "",
+      "location": "",
+      "area": null,
+      "divisible_plot": "",
+      "geom_wkt": "POINT(76.91777996 43.19712702)"
+    }
+  },
+  {
+    "id": 44,
+    "landInfo": {
+      "kad_nomer": "",
+      "granted_right": "",
+      "land_use_term": "",
+      "celevoe": "",
+      "location": "",
+      "area": null,
+      "divisible_plot": "",
+      "geom_wkt": "POINT(76.9572213 43.20739435)"
+    }
+  },
+  {
+    "id": 46,
+    "landInfo": {
+      "kad_nomer": "",
+      "granted_right": "",
+      "land_use_term": "",
+      "celevoe": "",
+      "location": "",
+      "area": null,
+      "divisible_plot": "",
+      "geom_wkt": "POINT(76.8380495 43.34068912)"
+    }
+  }
+]

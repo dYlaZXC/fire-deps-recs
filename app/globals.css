@@ -1,0 +1,330 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Уменьшение всех отступов на 37% (было 40%, увеличено на 5%) */
+@layer utilities {
+  /* Переопределение margin классов */
+  .m-1 { margin: 0.1575rem !important; } /* было 0.25rem */
+  .m-2 { margin: 0.315rem !important; } /* было 0.5rem */
+  .m-3 { margin: 0.4725rem !important; } /* было 0.75rem */
+  .m-4 { margin: 0.63rem !important; } /* было 1rem */
+  .m-5 { margin: 0.7875rem !important; } /* было 1.25rem */
+  .m-6 { margin: 0.945rem !important; } /* было 1.5rem */
+  .m-8 { margin: 1.26rem !important; } /* было 2rem */
+  .m-10 { margin: 1.575rem !important; } /* было 2.5rem */
+  .m-12 { margin: 1.89rem !important; } /* было 3rem */
+  .m-16 { margin: 2.52rem !important; } /* было 4rem */
+  .m-20 { margin: 3.15rem !important; } /* было 5rem */
+  .m-24 { margin: 3.78rem !important; } /* было 6rem */
+  
+  /* Переопределение margin-top классов */
+  .mt-1 { margin-top: 0.1575rem !important; }
+  .mt-2 { margin-top: 0.315rem !important; }
+  .mt-3 { margin-top: 0.4725rem !important; }
+  .mt-4 { margin-top: 0.63rem !important; }
+  .mt-5 { margin-top: 0.7875rem !important; }
+  .mt-6 { margin-top: 0.945rem !important; }
+  .mt-8 { margin-top: 1.26rem !important; }
+  .mt-10 { margin-top: 1.575rem !important; }
+  .mt-12 { margin-top: 1.89rem !important; }
+  .mt-16 { margin-top: 2.52rem !important; }
+  .mt-20 { margin-top: 3.15rem !important; }
+  .mt-24 { margin-top: 3.78rem !important; }
+  
+  /* Переопределение margin-bottom классов */
+  .mb-1 { margin-bottom: 0.1575rem !important; }
+  .mb-2 { margin-bottom: 0.315rem !important; }
+  .mb-3 { margin-bottom: 0.4725rem !important; }
+  .mb-4 { margin-bottom: 0.63rem !important; }
+  .mb-5 { margin-bottom: 0.7875rem !important; }
+  .mb-6 { margin-bottom: 0.945rem !important; }
+  .mb-8 { margin-bottom: 1.26rem !important; }
+  .mb-10 { margin-bottom: 1.575rem !important; }
+  .mb-12 { margin-bottom: 1.89rem !important; }
+  .mb-16 { margin-bottom: 2.52rem !important; }
+  .mb-20 { margin-bottom: 3.15rem !important; }
+  .mb-24 { margin-bottom: 3.78rem !important; }
+  
+  /* Переопределение margin-left и margin-right классов */
+  .ml-1 { margin-left: 0.315rem !important; }
+  .ml-2 { margin-left: 0.63rem !important; }
+  .ml-3 { margin-left: 0.945rem !important; }
+  .ml-4 { margin-left: 1.26rem !important; }
+  .ml-5 { margin-left: 1.575rem !important; }
+  .ml-6 { margin-left: 1.89rem !important; }
+  .ml-8 { margin-left: 2.52rem !important; }
+  .ml-10 { margin-left: 3.15rem !important; }
+  .ml-12 { margin-left: 3.78rem !important; }
+  .ml-16 { margin-left: 5.04rem !important; }
+  .ml-20 { margin-left: 6.3rem !important; }
+  .ml-24 { margin-left: 7.56rem !important; }
+  
+  .mr-1 { margin-right: 0.315rem !important; }
+  .mr-2 { margin-right: 0.63rem !important; }
+  .mr-3 { margin-right: 0.945rem !important; }
+  .mr-4 { margin-right: 1.26rem !important; }
+  .mr-5 { margin-right: 1.575rem !important; }
+  .mr-6 { margin-right: 1.89rem !important; }
+  .mr-8 { margin-right: 2.52rem !important; }
+  .mr-10 { margin-right: 3.15rem !important; }
+  .mr-12 { margin-right: 3.78rem !important; }
+  .mr-16 { margin-right: 5.04rem !important; }
+  .mr-20 { margin-right: 6.3rem !important; }
+  .mr-24 { margin-right: 7.56rem !important; }
+  
+  /* Переопределение margin-x и margin-y классов */
+  .mx-1 { margin-left: 0.315rem !important; margin-right: 0.315rem !important; }
+  .mx-2 { margin-left: 0.63rem !important; margin-right: 0.63rem !important; }
+  .mx-3 { margin-left: 0.945rem !important; margin-right: 0.945rem !important; }
+  .mx-4 { margin-left: 1.26rem !important; margin-right: 1.26rem !important; }
+  .mx-5 { margin-left: 1.575rem !important; margin-right: 1.575rem !important; }
+  .mx-6 { margin-left: 1.89rem !important; margin-right: 1.89rem !important; }
+  .mx-8 { margin-left: 2.52rem !important; margin-right: 2.52rem !important; }
+  .mx-10 { margin-left: 3.15rem !important; margin-right: 3.15rem !important; }
+  .mx-12 { margin-left: 3.78rem !important; margin-right: 3.78rem !important; }
+  .mx-16 { margin-left: 5.04rem !important; margin-right: 5.04rem !important; }
+  .mx-20 { margin-left: 6.3rem !important; margin-right: 6.3rem !important; }
+  .mx-24 { margin-left: 7.56rem !important; margin-right: 7.56rem !important; }
+  
+  .my-1 { margin-top: 0.1575rem !important; margin-bottom: 0.1575rem !important; }
+  .my-2 { margin-top: 0.315rem !important; margin-bottom: 0.315rem !important; }
+  .my-3 { margin-top: 0.4725rem !important; margin-bottom: 0.4725rem !important; }
+  .my-4 { margin-top: 0.63rem !important; margin-bottom: 0.63rem !important; }
+  .my-5 { margin-top: 0.7875rem !important; margin-bottom: 0.7875rem !important; }
+  .my-6 { margin-top: 0.945rem !important; margin-bottom: 0.945rem !important; }
+  .my-8 { margin-top: 1.26rem !important; margin-bottom: 1.26rem !important; }
+  .my-10 { margin-top: 1.575rem !important; margin-bottom: 1.575rem !important; }
+  .my-12 { margin-top: 1.89rem !important; margin-bottom: 1.89rem !important; }
+  .my-16 { margin-top: 2.52rem !important; margin-bottom: 2.52rem !important; }
+  .my-20 { margin-top: 3.15rem !important; margin-bottom: 3.15rem !important; }
+  .my-24 { margin-top: 3.78rem !important; margin-bottom: 3.78rem !important; }
+  
+  /* Переопределение padding классов */
+  .p-1 { padding: 0.1575rem !important; }
+  .p-2 { padding: 0.315rem !important; }
+  .p-3 { padding: 0.4725rem !important; }
+  .p-4 { padding: 0.63rem !important; }
+  .p-5 { padding: 0.7875rem !important; }
+  .p-6 { padding: 0.945rem !important; }
+  .p-8 { padding: 1.26rem !important; }
+  .p-10 { padding: 1.575rem !important; }
+  .p-12 { padding: 1.89rem !important; }
+  .p-16 { padding: 2.52rem !important; }
+  .p-20 { padding: 3.15rem !important; }
+  .p-24 { padding: 3.78rem !important; }
+  
+  /* Переопределение padding-top классов */
+  .pt-1 { padding-top: 0.1575rem !important; }
+  .pt-2 { padding-top: 0.315rem !important; }
+  .pt-3 { padding-top: 0.4725rem !important; }
+  .pt-4 { padding-top: 0.63rem !important; }
+  .pt-5 { padding-top: 0.7875rem !important; }
+  .pt-6 { padding-top: 0.945rem !important; }
+  .pt-8 { padding-top: 1.26rem !important; }
+  .pt-10 { padding-top: 1.575rem !important; }
+  .pt-12 { padding-top: 1.89rem !important; }
+  .pt-16 { padding-top: 2.52rem !important; }
+  .pt-20 { padding-top: 3.15rem !important; }
+  .pt-24 { padding-top: 3.78rem !important; }
+  
+  /* Переопределение padding-bottom классов */
+  .pb-1 { padding-bottom: 0.1575rem !important; }
+  .pb-2 { padding-bottom: 0.315rem !important; }
+  .pb-3 { padding-bottom: 0.4725rem !important; }
+  .pb-4 { padding-bottom: 0.63rem !important; }
+  .pb-5 { padding-bottom: 0.7875rem !important; }
+  .pb-6 { padding-bottom: 0.945rem !important; }
+  .pb-8 { padding-bottom: 1.26rem !important; }
+  .pb-10 { padding-bottom: 1.575rem !important; }
+  .pb-12 { padding-bottom: 1.89rem !important; }
+  .pb-16 { padding-bottom: 2.52rem !important; }
+  .pb-20 { padding-bottom: 3.15rem !important; }
+  .pb-24 { padding-bottom: 3.78rem !important; }
+  
+  /* Переопределение padding-left и padding-right классов */
+  .pl-1 { padding-left: 0.315rem !important; }
+  .pl-2 { padding-left: 0.63rem !important; }
+  .pl-3 { padding-left: 0.945rem !important; }
+  .pl-4 { padding-left: 1.26rem !important; }
+  .pl-5 { padding-left: 1.575rem !important; }
+  .pl-6 { padding-left: 1.89rem !important; }
+  .pl-8 { padding-left: 2.52rem !important; }
+  .pl-10 { padding-left: 3.15rem !important; }
+  .pl-12 { padding-left: 3.78rem !important; }
+  .pl-16 { padding-left: 5.04rem !important; }
+  .pl-20 { padding-left: 6.3rem !important; }
+  .pl-24 { padding-left: 7.56rem !important; }
+  
+  .pr-1 { padding-right: 0.315rem !important; }
+  .pr-2 { padding-right: 0.63rem !important; }
+  .pr-3 { padding-right: 0.945rem !important; }
+  .pr-4 { padding-right: 1.26rem !important; }
+  .pr-5 { padding-right: 1.575rem !important; }
+  .pr-6 { padding-right: 1.89rem !important; }
+  .pr-8 { padding-right: 2.52rem !important; }
+  .pr-10 { padding-right: 3.15rem !important; }
+  .pr-12 { padding-right: 3.78rem !important; }
+  .pr-16 { padding-right: 5.04rem !important; }
+  .pr-20 { padding-right: 6.3rem !important; }
+  .pr-24 { padding-right: 7.56rem !important; }
+  
+  /* Переопределение padding-x и padding-y классов */
+  .px-1 { padding-left: 0.315rem !important; padding-right: 0.315rem !important; }
+  .px-2 { padding-left: 0.63rem !important; padding-right: 0.63rem !important; }
+  .px-3 { padding-left: 0.945rem !important; padding-right: 0.945rem !important; }
+  .px-4 { padding-left: 1.26rem !important; padding-right: 1.26rem !important; }
+  .px-5 { padding-left: 1.575rem !important; padding-right: 1.575rem !important; }
+  .px-6 { padding-left: 1.89rem !important; padding-right: 1.89rem !important; }
+  .px-8 { padding-left: 2.52rem !important; padding-right: 2.52rem !important; }
+  .px-10 { padding-left: 3.15rem !important; padding-right: 3.15rem !important; }
+  .px-12 { padding-left: 3.78rem !important; padding-right: 3.78rem !important; }
+  .px-16 { padding-left: 5.04rem !important; padding-right: 5.04rem !important; }
+  .px-20 { padding-left: 6.3rem !important; padding-right: 6.3rem !important; }
+  .px-24 { padding-left: 7.56rem !important; padding-right: 7.56rem !important; }
+  
+  .py-1 { padding-top: 0.1575rem !important; padding-bottom: 0.1575rem !important; }
+  .py-2 { padding-top: 0.315rem !important; padding-bottom: 0.315rem !important; }
+  .py-3 { padding-top: 0.4725rem !important; padding-bottom: 0.4725rem !important; }
+  .py-4 { padding-top: 0.63rem !important; padding-bottom: 0.63rem !important; }
+  .py-5 { padding-top: 0.7875rem !important; padding-bottom: 0.7875rem !important; }
+  .py-6 { padding-top: 0.945rem !important; padding-bottom: 0.945rem !important; }
+  .py-8 { padding-top: 1.26rem !important; padding-bottom: 1.26rem !important; }
+  .py-10 { padding-top: 1.575rem !important; padding-bottom: 1.575rem !important; }
+  .py-12 { padding-top: 1.89rem !important; padding-bottom: 1.89rem !important; }
+  .py-16 { padding-top: 2.52rem !important; padding-bottom: 2.52rem !important; }
+  .py-20 { padding-top: 3.15rem !important; padding-bottom: 3.15rem !important; }
+  .py-24 { padding-top: 3.78rem !important; padding-bottom: 3.78rem !important; }
+  
+  /* Переопределение gap классов для flexbox и grid */
+  .gap-1 { gap: 0.1575rem !important; }
+  .gap-2 { gap: 0.315rem !important; }
+  .gap-3 { gap: 0.4725rem !important; }
+  .gap-4 { gap: 0.63rem !important; }
+  .gap-5 { gap: 0.7875rem !important; }
+  .gap-6 { gap: 0.945rem !important; }
+  .gap-8 { gap: 1.26rem !important; }
+  .gap-10 { gap: 1.575rem !important; }
+  .gap-12 { gap: 1.89rem !important; }
+  .gap-16 { gap: 2.52rem !important; }
+  .gap-20 { gap: 3.15rem !important; }
+  .gap-24 { gap: 3.78rem !important; }
+  
+  /* Переопределение space-between классов */
+  .space-x-1 > :not([hidden]) ~ :not([hidden]) { margin-left: 0.315rem !important; }
+  .space-x-2 > :not([hidden]) ~ :not([hidden]) { margin-left: 0.63rem !important; }
+  .space-x-3 > :not([hidden]) ~ :not([hidden]) { margin-left: 0.945rem !important; }
+  .space-x-4 > :not([hidden]) ~ :not([hidden]) { margin-left: 1.26rem !important; }
+  .space-x-5 > :not([hidden]) ~ :not([hidden]) { margin-left: 1.575rem !important; }
+  .space-x-6 > :not([hidden]) ~ :not([hidden]) { margin-left: 1.89rem !important; }
+  .space-x-8 > :not([hidden]) ~ :not([hidden]) { margin-left: 2.52rem !important; }
+  .space-x-10 > :not([hidden]) ~ :not([hidden]) { margin-left: 3.15rem !important; }
+  .space-x-12 > :not([hidden]) ~ :not([hidden]) { margin-left: 3.78rem !important; }
+  .space-x-16 > :not([hidden]) ~ :not([hidden]) { margin-left: 5.04rem !important; }
+  .space-x-20 > :not([hidden]) ~ :not([hidden]) { margin-left: 6.3rem !important; }
+  .space-x-24 > :not([hidden]) ~ :not([hidden]) { margin-left: 7.56rem !important; }
+  
+  .space-y-1 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.1575rem !important; }
+  .space-y-2 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.315rem !important; }
+  .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.4725rem !important; }
+  .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.63rem !important; }
+  .space-y-5 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.7875rem !important; }
+  .space-y-6 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.945rem !important; }
+  .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.26rem !important; }
+  .space-y-10 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.575rem !important; }
+  .space-y-12 > :not([hidden]) ~ :not([hidden]) { margin-top: 1.89rem !important; }
+  .space-y-16 > :not([hidden]) ~ :not([hidden]) { margin-top: 2.52rem !important; }
+  .space-y-20 > :not([hidden]) ~ :not([hidden]) { margin-top: 3.15rem !important; }
+  .space-y-24 > :not([hidden]) ~ :not([hidden]) { margin-top: 3.78rem !important; }
+}

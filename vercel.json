@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "next build",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "functions": {
+    "api/generate-recommendations/*.ts": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
+} 
