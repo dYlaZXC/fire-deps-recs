@@ -13,12 +13,7 @@ const nextConfig = {
   serverExternalPackages: ['maplibre-gl'],
   experimental: {
     optimizeCss: true,
-    turbo: {
-      loaders: {
-        // Ускорение загрузки JSON
-        '.json': 'json-loader',
-      },
-    },
+    // turbo.loaders removed
   },
   webpack: (config, { dev, isServer }) => {
     if (dev) {
@@ -28,12 +23,12 @@ const nextConfig = {
         aggregateTimeout: 300,
         ignored: /node_modules/,
       }
-      
+
       // Включаем кэширование для ускорения
       config.cache = {
         type: 'filesystem',
       }
-      
+
       // Оптимизация модулей
       config.optimization = {
         ...config.optimization,
@@ -41,7 +36,7 @@ const nextConfig = {
         removeEmptyChunks: false,
         splitChunks: false,
       }
-      
+
       // Исключаем большие файлы из hot reload
       config.watchOptions = {
         ...config.watchOptions,
