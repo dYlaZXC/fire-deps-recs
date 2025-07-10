@@ -41,6 +41,7 @@ next-env.d.ts
 
 # Large data files
 gos_lands_in_buffer_3.json
+gos_lands_in_buffer_4.json
 land_data.json
 lands_all.json
 test_v3_result.json
